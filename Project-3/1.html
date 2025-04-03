@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="text-center text-white bg-black">
+    <section class="mt-10">
+        <div class="border ml-[35%] mr-[35%] py-5">
+            <p class="font-light text-3xl insta"><i class="fa-brands fa-instagram pr-2 text-rose-400"></i>Instagram</p>
+            <input type="text"  id="insta1" class="border3 border rounded-lg" required><br>
+            <label class="absolute left-[39%] top-[18%] font-semibold text-sm text-gray" id="p1">Phone number,username or email</label>
+            <i class="fa-solid fa-eye absolute left-[59%] top-[33%] text-lg" onclick="tgl()" id="tglbtn"></i>
+            <input type="password" id="insta2" class="border3 border rounded-lg"><br><br>
+            <p class="absolute left-[39%] top-[30%] font-semibold text-sm" id="p2">Password</p>
+            <button class="border px-30 py-3 rounded-lg text-white font-semibold bg-sky-500" onclick="login()">Log in</button><br><br>
+            <label class="font-semibold">OR</label><br><br>                    
+            <label class="font-semibold text-blue-400"> <i class="fa-brands fa-square-facebook text-blue-600 text-2xl mr-1"></i>Log in with Facebook</label><br><br>
+            <p class="font-semibold">Forgot Password ?</p>
+        </div>
+        <div class="border ml-[35%] mr-[35%] mt-6">
+            <p class="font-semibold pt-5 pb-4">Don't have an account ? <button class="text-blue-700">Sign Up</button></p>
+        </div>
+        <div class="flex absolute left-[40.5%] mt-5">
+            <img src="play2.png" height="100px" width="15%" class="mr-3">     
+           <img src="ms.png"  height="100px" width="15%" class="rounded-md">     
+        </div>
+    </section>
+    <!--Calculator-->
+    <div class="p-10 ml-[30%] mr-[30%] border bg-white rounded-2xl mt-25">
+        <p class="text-black font-semibold text-3xl">Calculator</p>
+        <input type="number" id="inp" class="border h-10 pl-5 bg-black rounded-md mt-7" placeholder="Enter Value 1"><br><br>
+        <input type="number" id="inp1" class="border h-10 pl-5 bg-black rounded-md" placeholder="Enter Value 2"><br><br>
+        <button onclick="add()" class="btn border mr-6 p-2 bg-black rounded-md">Addition</button>
+        <button onclick="div()" class="btn border p-2 bg-black rounded-md">Division</button><br><br>
+        <button onclick="sub()" class="btn border p-2 ml-3 bg-black rounded-md">Subtraction</button>
+        <button onclick="mul()" class="btn border p-2 ml-5 bg-black rounded-md">Multiplication</button>
+        <p class="para mt-10 p-3 text-[24px] text-black font-bold border">Answer is </p>
+    </div>
+    <!--Color Change-->
+    <section>
+        <div class=" border p-40 bg-black ml-[38%] mr-[40%] mt-10" id="bg"></div><br>
+        <button class=" border2 mt-10 bg-black" id="btn2" onclick="change()">Change</button>
+    </section>
+    <!--result-->
+    <section class="text-white mt-10">
+        <table class="inline">
+            <thead>
+                <tr class="border border2">
+                    <th class=" border2">Subject</th>
+                    <th class=" border2">Marks Out Of 100</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class=" border2">
+                    <td>Hindi</td>
+                    <td><input type="number" id="inp2" class="border2"></td>
+                </tr>
+                <tr  class="border2">
+                    <td>English</td>
+                    <td><input type="number" id="inp3" class="border2"></td>
+                </tr>
+                <tr  class="border2">
+                    <td>SS</td>
+                    <td><input type="number" id="inp4" class="border2"></td>
+                </tr>
+                <tr  class="border2">
+                    <td>Science</td>
+                    <td><input type="number" id="inp5" class="border2"></td>
+                </tr>
+                <tr  class="border2">
+                    <td>Maths</td>
+                    <td><input type="number" id="inp6" class="border2"></td>
+                </tr>
+                <tr  class="border2">
+                    <td class="border2">Total</td>
+                    <td><p class="border2 total" id="tt"></td>
+                </tr>
+                <tr  class="border2">
+                    <td class="border2">Percentage</td>
+                    <td><p class="border2 percentage" id="pr"></p></td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+        <button class="border2" id="totalbtn" onclick="totalall()">Result</button>
+        <button class="border2 pl-10" id="clearbtn" onclick="clearall()">Clear</button>
+    </section>
+    <script src="1.js"></script>
+</body>
+</html>
