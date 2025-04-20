@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-black text-white mt-5">
+    <p class="text-center text-[25px]">--------- Image Slider ---------</p>
+    <!--Image Slider-->
+    <div class="flex justify-center text-2xl mt-10">
+        <div class="mt-20"><button onclick="start()" class="border mt-10"><span class="p-5">Start</span></button></div>
+        <div id="count" class="h-75 w-80 bg-no-repeat ml-10 mr-10"><img src="services1.jpg" width="100%" height="100%"></div><br><br><br>
+        <div class="mt-30"><button onclick="stop()" class="border"><span class="p-5">Stop</span></button></div>
+    </div>
+
+    <!--Countdown-->
+    <p class="text-center text-[25px] mt-10">---------- CountDown ---------</p>
+    <div class=" flex ml-[28%] mr-[28%] justify-around text-2xl">
+        <div class="mt-15 text-2xl">
+            <button class="border" onclick="start2()"><span class="p-5">Start</span></button>
+        </div>
+        <div class="flex p-10">
+            <div class="border p-6 mr-5" id="hh">
+                23
+            </div>
+            <div class="border p-6" id="mm">
+                59
+            </div>
+            <div class="border p-6 ml-5" id="ss">
+                59
+            </div>
+        </div>
+        <div class="mt-15 text-2xl">
+            <button class="border" onclick="stop2()"><span class="p-5">stop</span></button>
+        </div>
+    </div>
+    <script src="1.js"></script>
+</body>
+</html>
