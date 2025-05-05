@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+   #header{
+    border-bottom: 5px solid brown;
+   }
+   .ftr{
+    background-color: rgb(28, 28, 83);
+   }
+   .product-box
+    {
+        box-shadow: 5px 8px 15px black;
+        border: 1px solid gray;
+        padding: 10px;
+        border-radius: 8px;
+        width:350px;
+        margin: 10px;
+    }
+    .product-box img{
+        width: 100%;;
+        height: 190px;
+        object-fit: contain;
+    }
+    .product-container
+    {
+        /* display: flex; */
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-around;
+    }
+   
+</style>
+<body>
+    <header class="w-full fixed bg-white">
+        <section class="flex justify-evenly pb-1 pt-1 " id="header">
+            <div id="logo">
+                <img src="Logo.png">
+            </div>    
+            <div id="Search" class="flex h-10 mt-6  pl-5 w-[30%]">
+                <input type="text" placeholder="Search..." class="border w-full pl-5 rounded-3xl font-serif text-lg">
+            </div>
+            <div id="menu" class="flex h-10 mt-6 text-xl text-blue-950">
+                <i class="fa-solid fa-user p-3"></i>
+                <i class="fa-regular fa-heart p-3"></i>
+                <i class="fa-regular fa-gem p-3"></i>
+                <i class="fa-solid fa-cart-shopping p-3"></i>
+            </div>
+        </section>
+        <section class="border bg-blue-950 mt-3 p-1">
+            <div class=" text-white text-[15px] flex space-x-28 justify-center pl-28">
+                <a href="#" id="all">All</a>
+                <a href="#" id="men">MEN</a>
+                <a href="#" id="women">WOMEN</a>
+                <a href="#" id="kids">KIDS</a>
+            </div>
+        </section>
+    </header>
+    <section id="images">
+        <!-- Men -->
+        <div class="pt-36" >
+            <img src="./images/mens/men1.jpg">
+        </div>
+        <!-- Women -->
+        <div class="mt-3">
+            <img src="./images/womens/women1.jpg">
+        </div>
+        <!-- Kids -->
+        <div class="mt-3">
+            <img src="./images/kids/kid1.jpg">
+        </div>
+    </section>
+    <div id="productlist" class="product-container pt-40"></div>
+    
+    <footer class="text-center bg-blue-950 text-white mt-3" id="footer">
+        <div class="pt-5 text-[20px]">
+            <p>Join Our Mainling List For Updates</p>
+        </div>
+        <div>
+            <br><input type="email" placeholder="Enter Your Mail" class="border w-[25%] p-2 pl-5 text-[17px]">
+            <button class="border w-[15%] p-2 ml-10 bg-red-900 font-semibold">SUBSCRIBE</button>
+        </div>
+        <div class="mt-10 flex justify-evenly text-start" id="border">
+            <div class="text-[13px] space-y-3">
+                <p class="text-[15px] font-semibold">POLICIES</p>
+                <p class="mt-5">Terms and Conditions</p>
+                <p>Delivery & Shipping</p>
+                <p>Return Policy</p>
+                <p>Privacy Policy</p>
+                <p>Asked Questions</p>
+            </div>
+            <div class="text-[13px] space-y-3">
+                <p class="text-[15px] font-semibold">QUICK HELP</p>
+                <p class="mt-5">About Us</p>
+                <p>Our Story</p>
+                <p>Contact Us</p>
+            </div>
+            <div>
+                <P class="text-[15px] font-semibold">DOWNLOAD THE APP</P>
+                <img src="./images/app.webp" class="h-10 w-fit mt-5">
+                <img src="./images/app2.webp" class="h-10 w-fit mt-5">
+            </div>
+        </div>
+        <div class="mt-10 flex justify-center text-gray-200 ftr pt-3 pb-2">
+            <div>
+                <p>Copyright © USPA | Arvind Fashions</p>
+            </div>
+            <div class="ml-10 text-[20px] space-x-2">
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-youtube"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
